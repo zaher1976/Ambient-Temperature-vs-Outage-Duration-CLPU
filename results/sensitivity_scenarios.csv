@@ -1,0 +1,15 @@
+study,regime,n_scenarios,eps_fair,status,objective,solve_time_s,n_variables,n_constraints,source
+scenario_convergence,10.5,10,,Optimal,9095.473333965201,142.1,6245,10255,solved
+scenario_convergence,10.5,20,,Optimal,9345.575470715992,301.05,12485,20505,table5
+scenario_convergence,10.5,30,,Optimal,10516.24732732149,300.86,18725,30755,solved
+scenario_convergence,10.5,50,,Optimal,10542.277692017275,300.65,31205,51255,solved
+eps_fair,10.5,20,0.03,Optimal,33003.02366736141,315.85,12485,30105,solved
+eps_fair,10.5,20,0.05,Optimal,34294.20668883566,304.52,12485,30105,table5
+eps_fair,10.5,20,0.1,Optimal,32646.50100031925,306.44,12485,30105,solved
+scenario_convergence,46.4,10,,Optimal,30655.45318822307,292.64,6245,10255,solved
+scenario_convergence,46.4,20,,Optimal,32158.69808522944,300.94,12485,20505,table5
+scenario_convergence,46.4,30,,Optimal,32816.950224922555,306.31,18725,30755,solved
+scenario_convergence,46.4,50,,Optimal,33221.27067741785,307.15,31205,51255,solved
+eps_fair,46.4,20,0.03,Optimal,74323.65781469652,305.21,12485,30105,solved
+eps_fair,46.4,20,0.05,Optimal,74530.75773232112,311.32,12485,30105,table5
+eps_fair,46.4,20,0.1,Optimal,76232.54711865447,311.35,12485,30105,solved
