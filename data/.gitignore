@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# CBC solver logs
+results/cbc_*.log
+
+# TensorFlow / Keras
+*.keras
+*.h5
+
+# Temporary files
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Local datasets (do not publish)
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.zip
+
+# Original operational datasets
+NATIONAL_MASTER_MATRIX_CLEAN_v2.csv
+hachmann_digitized.csv
