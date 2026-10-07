@@ -4,6 +4,16 @@ Repository accompanying the manuscript:
 
 **Ambient Temperature versus Outage Duration as Surge Drivers in a Chronically Constrained Grid**
 
+## Archived Release
+
+Version archived on Zenodo:
+
+DOI: 10.5281/zenodo.23205869
+
+GitHub repository:
+
+https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU
+
 ## Overview
 
 This repository contains the complete reproducibility package used in the study, including:
@@ -19,14 +29,14 @@ This repository contains the complete reproducibility package used in the study,
 
 ## Reproducibility
 
-The repository reproduces all major results reported in the manuscript:
+This repository reproduces all major results reported in the manuscript.
 
-### Forecasting
+### Forecasting Results
 
 - Table 3: Regional BiLSTM forecasting performance
 - Table 4: Architecture benchmark comparison
 
-### Optimisation
+### Optimisation Results
 
 - Table 5: Main optimisation results
 - Table 6: Lambda sensitivity analysis
@@ -45,4 +55,10 @@ The repository reproduces all major results reported in the manuscript:
 
 The original operational SCADA records are not redistributed through this repository.
 
-Only source code, optimisation models, reproducibility artefacts, and processed results are included.
+Only source code, optimisation models, reproducibility artefacts, processed results, and derived outputs required to reproduce the published findings are included.
+
+## Citation
+
+If you use this repository, please cite:
+
+> Fadhil, R. Z. (2026). Ambient Temperature vs Outage Duration CLPU: Reproducibility Package (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23205869
