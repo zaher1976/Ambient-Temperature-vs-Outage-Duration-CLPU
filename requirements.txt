@@ -1,9 +1,27 @@
-numpy
-pandas
-scipy
-tensorflow
-xgboost
-pulp
-scikit-learn
-matplotlib
-seaborn
+# Python bytecode caches — never belong in a reproducibility archive
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Raw SCADA records are governed by a Ministry of Electricity confidentiality
+# arrangement and must never be committed. Only derived and aggregated
+# artefacts belong in this repository.
+data/raw/
+*NATIONAL_MASTER_MATRIX*
+*.xlsx
+
+# Solver logs
+*.log
+cbc_*.log
