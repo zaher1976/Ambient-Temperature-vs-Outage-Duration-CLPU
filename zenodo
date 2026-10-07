@@ -1,0 +1,7 @@
+mkdir -p results
+cp table5_single.csv table5_single_scenario_costs.csv disc_weight_check.csv results/
+# في requirements.txt: غيّر السطر pulp إلى
+#   pulp<4
+git add .zenodo.json results/ requirements.txt
+git commit -m "Add weighting-robustness re-solves; pin pulp<4"
+git push
