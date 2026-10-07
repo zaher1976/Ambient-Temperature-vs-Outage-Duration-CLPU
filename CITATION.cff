@@ -1,4 +1,31 @@
 cff-version: 1.2.0
-title: Fairness-Constrained CLPU Optimization
+
+title: Fairness-Constrained Load Shedding with Cold Load Pickup
+
 version: 1.0.0
+
+doi: 10.5281/zenodo.23205869
+
 license: MIT
+
+message: "If you use this software, please cite it using the metadata below."
+
+authors:
+  - family-names: Fadhil
+    given-names: Raham Zaher
+
+repository-code: https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU
+
+url: https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU
+
+keywords:
+  - Cold Load Pickup
+  - CLPU
+  - Load Shedding
+  - Fairness
+  - Optimization
+  - MILP
+  - Power Systems
+  - BiLSTM
+
+date-released: 2026-10-07
