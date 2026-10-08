@@ -1,0 +1,28 @@
+{
+  "upload_type": "software",
+  "title": "Fairness-Constrained Load-Shedding Optimisation with Cold Load Pickup: Ambient Temperature versus Outage Duration as Surge Drivers in a Chronically Constrained Grid",
+  "description": "<p>Reproducibility package for the study of cold-load-pickup (CLPU) surge drivers in rotational load shedding, built on SCADA telemetry from five Iraqi governorates (206,040 hourly records, 2020-2024).</p><p>Contents: the fairness-constrained multi-scenario MILP (Eqs. 1-18), per-governorate BiLSTM demand forecasting with LSTM, GRU and XGBoost benchmarks, the five model configurations S1-S5 across six thermal regimes, solver-gap diagnostics and lower bounds for all thirty instances, the thermal-kernel sensitivity analysis, the scenario-convergence and fairness-tolerance studies, the budget-stability re-solves, and the discomfort-weighting robustness re-solves.</p><p>The raw SCADA records are governed by a Ministry of Electricity confidentiality arrangement and are not redistributed. Only derived and aggregated artefacts sufficient to verify the reported findings are included.</p>",
+  "creators": [
+    {
+      "name": "Raham, Zaher Fadhil",
+      "affiliation": "College of Computing and Informatics, Universiti Tenaga Nasional (UNITEN), Selangor, Malaysia; Al-Nahrain Research Center for Renewable Energy, Al-Nahrain University, Baghdad, Iraq"
+    },
+    {
+      "name": "Mohamed Salleh, Faridah Hani",
+      "affiliation": "College of Computing and Informatics, Universiti Tenaga Nasional (UNITEN), Selangor, Malaysia"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "cold load pickup",
+    "load shedding",
+    "mixed-integer linear programming",
+    "fairness-constrained optimisation",
+    "demand forecasting",
+    "BiLSTM",
+    "power distribution",
+    "chronic supply scarcity"
+  ],
+  "language": "eng"
+}
