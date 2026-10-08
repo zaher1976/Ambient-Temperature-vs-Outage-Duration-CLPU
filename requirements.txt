@@ -1,27 +1,19 @@
-# Python bytecode caches — never belong in a reproducibility archive
-__pycache__/
-*.py[cod]
-*$py.class
+# Pinned to the environment the reported results were produced in
+# (results/environment.json: Python 3.13.15, Tesla T4, seed 42).
+#
+# pulp<4 is load-bearing: PuLP 4.0.0 rewrote LpVariable on a Rust core and
+# LpVariable(name, cat="Binary") raises TypeError, so every model here fails
+# under it. The upper bound is deliberate, not stale.
 
-# Environments
-.venv/
-venv/
-env/
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.14.1
+pulp==3.3.2
+scikit-learn==1.5.2
+xgboost==2.1.1
+matplotlib==3.9.2
+seaborn==0.13.2
 
-# Notebook checkpoints
-.ipynb_checkpoints/
-
-# OS cruft
-.DS_Store
-Thumbs.db
-
-# Raw SCADA records are governed by a Ministry of Electricity confidentiality
-# arrangement and must never be committed. Only derived and aggregated
-# artefacts belong in this repository.
-data/raw/
-*NATIONAL_MASTER_MATRIX*
-*.xlsx
-
-# Solver logs
-*.log
-cbc_*.log
+# Forecasting only. The optimisation runs without it; `run.py table5` reads the
+# cached forecasts from results/ and never imports TensorFlow.
+tensorflow==2.20.0
