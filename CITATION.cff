@@ -1,4 +1,4 @@
-cff-version: 1.2.1
+cff-version: 1.2.0
 
 title: >-
   Fairness-Constrained Load-Shedding Optimisation with Cold Load Pickup:
@@ -15,7 +15,7 @@ abstract: >-
   lower bounds, kernel and scenario sensitivity analyses, budget-stability
   re-solves and discomfort-weighting robustness re-solves.
 
-version: 1.2.0
+version: 1.2.1
 
 doi: 10.5281/zenodo.23205868
 
