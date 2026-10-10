@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+cff-version: 1.2.1
 
 title: >-
   Fairness-Constrained Load-Shedding Optimisation with Cold Load Pickup:
@@ -54,4 +54,4 @@ keywords:
   - power distribution
   - chronic supply scarcity
 
-date-released: 2026-10-08
+date-released: 2026-10-10
