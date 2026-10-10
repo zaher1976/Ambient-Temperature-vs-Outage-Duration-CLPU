@@ -9,9 +9,10 @@ built on SCADA telemetry from five Iraqi governorates (206,040 hourly records,
 2020–2024).
 
 The question the code answers: a common modelling assumption treats cold-load-pickup
-(CLPU) severity as a function of how long the outage lasted. Five configurations,
-identical in every respect except two switches, test whether the available evidence
-supports it.
+(CLPU) severity as a function of how long the outage lasted. Five configurations vary the surge specification and fairness constraints.
+These model-based sensitivity experiments do not identify an empirical outage-duration
+response: S3 uses a fixed surge coefficient, not a duration-varying kernel, and
+S3 versus S4 is confounded by the fairness setting.
 
 | Configuration | CLPU surge kernel | Fairness constraint |
 |---|---|---|
@@ -23,7 +24,7 @@ supports it.
 
 ## Archived release
 
-Concept DOI (always resolves to the latest version):
+Concept DOI (identifies the record across versions; verify the version DOI on Zenodo before citing a specific release):
 [10.5281/zenodo.23205868](https://doi.org/10.5281/zenodo.23205868)
 
 ## Install
@@ -49,8 +50,8 @@ python tests/test_smoke.py
 ```
 
 Builds a small synthetic record with the production schema, then builds and solves
-all five configurations, checks that the fairness constraint binds at the tolerance,
-that adding a constraint cannot lower the optimum, and that the two discomfort
+all five configurations, checks that the fairness constraint is enforced,
+and checks expected model relationships on the synthetic instance, and that the two discomfort
 weightings give structurally identical instances. No confidential data and no GPU
 required. It does **not** reproduce the published numbers — only the real record
 does that.
@@ -115,12 +116,18 @@ results/              recorded outputs of the reported run
 ## Two details worth knowing before reading the results
 
 **The attained gap is not the prescribed gap.** Most instances stop far from the 3%
-criterion. The manuscript shows this measures the weakness of the dual bound rather
-than the quality of the incumbent: six instances re-solved at three times the budget
-returned identical objectives. `milp.solve` therefore parses the lower bound out of
+criterion. Large gaps mean that global optimality and cost rankings are not certified.
+Six anticipative-reference instances re-solved at three times the budget returned
+unchanged incumbent objectives, but this does not establish their optimality or
+prove that the gap arises solely from weak dual bounds. `milp.solve` therefore parses the lower bound out of
 the CBC log and records it with every objective, and `analysis.certified` answers
 whether a difference between two configurations is established by those bounds.
 Without the log the bound cannot be recovered afterwards.
+
+**Solver-status caution.** The recorded CSV `status` field can read `Optimal`
+even for runs that reached their time limit with a large relative MIP gap.
+Do not interpret this label as a certificate of global optimality. Check the
+recorded lower bound, relative gap, and time-cap fields where available.
 
 **The discomfort price enters the objective twice.** `C_disc` multiplies both the
 accumulation of Φ (Eq. 18) and its contribution to the objective (Eq. 2). That is a
@@ -140,8 +147,9 @@ Renewable Energy Research Centre at Al-Nahrain University.
 
 `results/environment.json` records the environment the reported results were produced
 in. GPU training is not bit-for-bit reproducible across hardware and library
-versions, which is why that file exists; the optimisation runs are deterministic and
-reproduced their objectives exactly across separate sessions. `run.py` writes
+versions, which is why that file exists; the optimisation uses fixed inputs and seeds where supported; full numerical
+reproduction of the reported results requires authorised access to the withheld
+SCADA data and matching software and solver environments. `run.py` writes
 `results/environment_rerun.json` for the environment you ran in, so the two can be
 compared.
 
