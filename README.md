@@ -1,6 +1,6 @@
 # Fairness-Constrained Load-Shedding Optimisation with Cold Load Pickup
 
-Reproducibility package for the manuscript
+Research software and reproducibility materials supporting the study (the full manuscript is not deposited in this repository).
 
 **Ambient Temperature versus Outage Duration as Surge Drivers in a Chronically
 Constrained Grid**
@@ -139,8 +139,7 @@ reports exactly which conclusions depend on the choice.
 ## Data availability
 
 The original operational SCADA records are not redistributed through this repository.
-Aggregated, de-identified summary statistics sufficient to verify the reported
-findings may be requested from the corresponding author, subject to approval by the
+Aggregated, de-identified summary statistics may be requested from the repository maintainer, subject to approval by the
 Renewable Energy Research Centre at Al-Nahrain University.
 
 ## Environment
@@ -155,7 +154,7 @@ compared.
 
 ## Citation
 
-> Raham, Z. F., & Mohamed Salleh, F. H. (2026). *Fairness-Constrained Load-Shedding
+> Raham, Z. F. (2026). *Fairness-Constrained Load-Shedding
 > Optimisation with Cold Load Pickup: Ambient Temperature versus Outage Duration as
 > Surge Drivers in a Chronically Constrained Grid* (reproducibility package).
 > Zenodo. https://doi.org/10.5281/zenodo.23205868
