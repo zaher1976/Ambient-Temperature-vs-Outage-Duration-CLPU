@@ -2,11 +2,14 @@ cff-version: 1.2.0
 title: >-
   Fairness-Constrained CLPU-Aware Load Management:
   SEGAN Local-Ramping CBC Sensitivity Reproduction Code
-message: 'Cite the version-specific Zenodo record when available.'
+message: 'Cite the version-specific Zenodo software record; this DOI and URL were supplied by the depositor.'
 authors:
   - family-names: Raham
     given-names: Zaher Fadhil
 version: 1.0.0
+doi: 10.5281/zenodo.23683578
+url: https://zenodo.org/records/23683578
+repository-code: https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU
 date-released: 2026-10-26
 license: MIT
 type: software
