@@ -5,4 +5,4 @@
 - Added two fully synthetic examples (3 feeders × 8 hours × 2 scenarios; 5 feeders × 24 hours × 3 scenarios), deterministic input generator, input-integrity tests, and a runnable CBC comparison.
 - Added an automated GitHub Actions smoke test that requires no restricted SCADA data.
 - Retained transparent restrictions on the original operational and frozen hourly data.
-- The previous archived version v1.0.0 has depositor-supplied DOI 10.5281/zenodo.23683578; v1.1.0 needs a new version DOI once uploaded and published.
+- The previous archived version v1.0.0 has depositor-supplied DOI 10.5281/zenodo.23683578; the depositor supplied v1.1.0 record DOI 10.5281/zenodo.23685364; Zenodo record status and uploaded bytes await independent confirmation.
