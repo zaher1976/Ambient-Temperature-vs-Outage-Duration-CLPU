@@ -1,30 +1,20 @@
-# Zenodo record status — SEGAN CBC v1.0.0
+# Zenodo SEGAN CBC software deposit: record reference and verification
 
-**Reserved version-specific DOI:** `10.5281/zenodo.23683578`  
-**DOI URL (may not resolve until publication):** https://doi.org/10.5281/zenodo.23683578  
-**Deposit state:** RESERVED / NOT YET CONFIRMED PUBLISHED  
-**Resource type:** Software  
-**Version:** 1.0.0  
-**Code license:** MIT  
+- **Version-specific DOI supplied by the depositor:** 10.5281/zenodo.23683578
+- **Zenodo record URL supplied by the depositor:** https://zenodo.org/records/23683578
+- **Reported archive filename:** SEGAN_CBC_Public_Code_Zenodo_GitHub_v1.0.0.zip
+- **Source code version:** v1.0.0
+- **Primary code snapshot:** https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU/commit/bf425c82bbb5974e814913b04b239297248ec7ac
+- **Preservation note:** this GitHub status note and subsequent README/CITATION citation edits are after the frozen 17-file ZIP. Do not change the original ZIP simply to include a DOI; it would no longer match its internal SHA256 manifest.
 
-## Provenance and scope
+## Verification limits
 
-This reserved identifier is for the distinct **SEGAN Local-Ramping CBC Sensitivity Reproduction Code** deposit. It is **not** the existing CLPU temperature-versus-duration study (`10.5281/zenodo.23205868`). The paper is **Fairness-Constrained, CLPU-Aware, Predictive–Prescriptive Load Management in Smart Grids under Scarcity Conditions**.
+The depositor provided the Zenodo record URL after reserving the DOI. In the current ChatGPT session, Zenodo and DataCite metadata were not independently retrievable, so **publication state, record metadata and uploaded ZIP bytes have not been independently confirmed**. Check the public record shows 'Published', its software type, title, authors, version, accessible ZIP file and matching DOI. If it is still a draft, complete publishing through Zenodo and then verify the DOI resolves.
 
-Published code snapshot prior to adding this status-only note:
+## Distinct prior research artifact
 
-- GitHub repository: https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU
-- SEGAN module: https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU/tree/main/extensions/segan-local-ramping-2026
-- Code-snapshot merge commit: `bf425c82bbb5974e814913b04b239297248ec7ac`
-- Deposit archive: `SEGAN_CBC_Public_Code_Zenodo_GitHub_v1.0.0.zip` (17 code/documentation/result-summary files; see `RELEASE_MANIFEST_SHA256.json` inside the ZIP).
+This deposit is the SEGAN local-ramping CBC sensitivity code, not the earlier Ambient Temperature versus Outage Duration as Surge Drivers in a Chronically Constrained Grid archived under 10.5281/zenodo.23205868.
 
-## Important: keep the deposited archive unchanged
+## Code and data availability
 
-This status note is GitHub-only and **not** part of the archived 17-file v1.0.0 deposit. Do not edit files inside the ZIP solely to insert the DOI, because that would change the recorded hashes and risk a GitHub–Zenodo version mismatch. GitHub's `README.md` and `CITATION.cff` in the original 17-file snapshot intentionally omit the unpublished DOI.
-
-When the Zenodo record is actually **published**:
-1. Confirm https://doi.org/10.5281/zenodo.23683578 resolves to the SEGAN software record, and the recorded ZIP is the intended one.
-2. Update `README.md` and `CITATION.cff` in GitHub with the now-published DOI, clearly distinguishing the archived v1.0.0 snapshot.
-3. Add the published DOI and the GitHub commit to the manuscript's Code and Data Availability section. Avoid representing protected SCADA/frozen hourly arrays as publicly distributed.
-
-**Do not describe a reserved DOI as registered or published until Zenodo publication is confirmed.**
+The public GitHub code and aggregate tables do not contain raw Iraqi SCADA data or the derivative frozen hourly optimization arrays. Full replay requires authorization to access those withheld files. The experimental result is a model-based sensitivity analysis and is not a direct grid-stability measurement.
