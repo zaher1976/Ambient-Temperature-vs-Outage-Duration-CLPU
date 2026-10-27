@@ -2,11 +2,13 @@ cff-version: 1.2.0
 title: >-
   Fairness-Constrained CLPU-Aware Grid Load Management:
   CBC MILP Reproducibility Code and Synthetic Examples
-message: 'Cite the version-specific Zenodo DOI once the v1.1.0 archive is published.'
+message: 'Cite the v1.1.0 Zenodo software DOI supplied by the depositor; verify record status and file metadata on Zenodo.'
 authors:
   - family-names: Raham
     given-names: Zaher Fadhil
 version: 1.1.0
+doi: 10.5281/zenodo.23685364
+url: https://zenodo.org/records/23685364
 date-released: 2026-10-27
 license: MIT
 type: software
