@@ -1,4 +1,4 @@
-"""Independent, solver-agnostic metrics for frozen SEGAN sensitivity.
+"""Independent, solver-agnostic metrics for frozen Grid Load Management sensitivity.
 
 No retraining and no new scenarios. Hourly samples imply sums of MW
 across 1-h intervals can be stated as MWh for energy quantities.

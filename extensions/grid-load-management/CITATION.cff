@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: >-
+  Fairness-Constrained CLPU-Aware Grid Load Management:
+  CBC MILP Reproducibility Code and Synthetic Examples
+message: 'Cite the version-specific Zenodo DOI once the v1.1.0 archive is published.'
+authors:
+  - family-names: Raham
+    given-names: Zaher Fadhil
+version: 1.1.0
+date-released: 2026-10-27
+license: MIT
+type: software
+repository-code: https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU
+keywords:
+  - load shedding
+  - fairness-constrained optimization
+  - cold load pickup
+  - local ramping
+  - mixed-integer linear programming
+  - reproducibility

@@ -1,0 +1,132 @@
+{
+  "title": "Fairness-Constrained CLPU-Aware Grid Load Management: CBC MILP Reproducibility Code and Synthetic Examples",
+  "version": "1.1.0",
+  "previous_version_doi": "10.5281/zenodo.23683578",
+  "files": [
+    {
+      "name": ".github/workflows/grid-load-management-demo.yml",
+      "sha256": "92ebbbbe8ab690cf2b9570915fb61c00194cfbafd69cc4ed9fad2982b25b8316",
+      "bytes": 1410
+    },
+    {
+      "name": "CHANGELOG_v1.1.0.md",
+      "sha256": "40f6cceb506dc28e3f3d200695d42a92a8a517a80119e4f448787172b20cbb34",
+      "bytes": 758
+    },
+    {
+      "name": "CITATION.cff",
+      "sha256": "61c27c8015e0db90fee2840d51ab50581f24bffb102a660b9d423cb7786d5bb9",
+      "bytes": 610
+    },
+    {
+      "name": "Grid_Load_Management_FullMILP_Sensitivity_Run.ipynb",
+      "sha256": "69ac2c0ed8a8f41f45e000ce5a15ce63804cd308444ec45d4ca0a6c1e4d17c27",
+      "bytes": 7336
+    },
+    {
+      "name": "LICENSE",
+      "sha256": "6147a52ebb1c02d9727ec7ca7c52937d6a9c949270ce2ad98af75850102bb28f",
+      "bytes": 1075
+    },
+    {
+      "name": "README.md",
+      "sha256": "76077442ca948600ec104afdcfc5f2629efef65293589fe4a87a5b9355f26ed4",
+      "bytes": 7284
+    },
+    {
+      "name": "ZENODO_UPLOAD.md",
+      "sha256": "ce0da486178d0c6620e90a4d5ee011fb660fa2ee4bd448134ffceb51a50329e5",
+      "bytes": 1887
+    },
+    {
+      "name": "corrected_11_window_summary.csv",
+      "sha256": "50645d95f422526bcaddd06e8790287399a900022862f582d721aea2b559953f",
+      "bytes": 822
+    },
+    {
+      "name": "examples/README.md",
+      "sha256": "a75ba484ba8deb6224f9bee859d715118a88d4f0bfb70146cacbd9be68c4c2b9",
+      "bytes": 2935
+    },
+    {
+      "name": "examples/__pycache__/generate_synthetic_examples.cpython-313.pyc",
+      "sha256": "68e81cb68b71ad821a5d5add03bad3392150e99e04644691231fc6d38a4edd19",
+      "bytes": 4924
+    },
+    {
+      "name": "examples/generate_synthetic_examples.py",
+      "sha256": "cf108cfe509812adf7348252e70b47db0d5ef1500924d0202ce5effc4ef50c2f",
+      "bytes": 2684
+    },
+    {
+      "name": "examples/run_synthetic_example.py",
+      "sha256": "4d052d8906e352a3525a65eebb361344759319a82c44204e8ad4ee5ad59216ae",
+      "bytes": 5120
+    },
+    {
+      "name": "examples/synthetic_day24.json",
+      "sha256": "50162ea5e8ba726885f15d9851a3b043936d9af87e29bf63d3825837ec221770",
+      "bytes": 8705
+    },
+    {
+      "name": "examples/synthetic_small.json",
+      "sha256": "f291c48113f8c4a47b41dc59519d01aa2f0424df00184b3d3b1ffac8d3645ba4",
+      "bytes": 1989
+    },
+    {
+      "name": "examples/test_synthetic_data.py",
+      "sha256": "183f09b51e63c70276557fe18ba1d4fc2d7813841010afe32b4615c1dee1d2ab",
+      "bytes": 1748
+    },
+    {
+      "name": "forecast_milp_v3.py",
+      "sha256": "42e145a470e466471fa8b99385dc2d43bc94babd710336c79349b51dc6a659a4",
+      "bytes": 5633
+    },
+    {
+      "name": "forecast_milp_v4.py",
+      "sha256": "def239830643f661ed7c231fff7f7f332021933620cb74225bd2cc2ac18b230a",
+      "bytes": 5546
+    },
+    {
+      "name": "make_report.py",
+      "sha256": "84a6f567d7d6e7b241c507d1cf47251355baefe6fc2edd0f7f652785c77f4cd4",
+      "bytes": 6196
+    },
+    {
+      "name": "requirements.txt",
+      "sha256": "fe1900a356e706088e78d112980c45019384bdda794e24b2adb0796f8eff89ea",
+      "bytes": 36
+    },
+    {
+      "name": "run_full_cbc.py",
+      "sha256": "f9b339981eab591acd1efdaaa89300dec6ce427726b0d2803f07764c1812dc3f",
+      "bytes": 10798
+    },
+    {
+      "name": "sensitivity_metrics.py",
+      "sha256": "562b58dfe2a80e794ce78ba593a991c86b4e577a3711ced96850ef9589aa2c4a",
+      "bytes": 4706
+    },
+    {
+      "name": "six_case_900_summary.csv",
+      "sha256": "e7f2fa57f3983a4874495e9aaf956e28a31a94d5f36c74dcc4b7a7b8ae85b52d",
+      "bytes": 1881
+    },
+    {
+      "name": "synthetic_smoke_test.py",
+      "sha256": "7b6e9b8287a1b5cad025756103f82237ae60e8a6612218d759c6ac1314ca350d",
+      "bytes": 1345
+    },
+    {
+      "name": "test_frozen_protocol.py",
+      "sha256": "6767f6514416d1fec0cb31a8b9dc1430a2aed622dea39b1d42a67e5f5dcda80e",
+      "bytes": 1508
+    },
+    {
+      "name": "verify_300_vs_900.py",
+      "sha256": "36da17ffd4488273edf79e18fcb5113042a27aee0b647772e11c71cfe0b73169",
+      "bytes": 10172
+    }
+  ]
+}

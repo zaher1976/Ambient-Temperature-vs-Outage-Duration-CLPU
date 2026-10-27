@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic, fully synthetic feeder inputs for illustrating the SEGAN MILP.
+"""Deterministic, fully synthetic feeder inputs for illustrating the Grid Load Management MILP.
 
 The generator does NOT read, sample, fit, or derive data from SCADA.
 """
@@ -44,7 +44,7 @@ def generate(case: str) -> dict:
     return {
       "metadata": {
          "synthetic": True,
-         "dataset_id": "SEGAN_SYNTHETIC_"+case.upper()+"_V1",
+         "dataset_id": "GRIDLOAD_SYNTHETIC_"+case.upper()+"_V1",
          "source": "DETERMINISTIC_FORMULAS_ONLY_NO_SCADA",
          "seed": SEED + (0 if case == 'small' else 24),
          "time_step_hours": 1,

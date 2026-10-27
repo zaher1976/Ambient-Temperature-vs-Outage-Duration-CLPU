@@ -1,4 +1,4 @@
-"""SEGAN CBC forensic check: original 72 and six targeted 900-second reruns.
+"""Grid Load Management CBC forensic check: original 72 and six targeted 900-second reruns.
 
 This script never solves or edits the MILP. It requires only numpy,pandas.
 Use --frozen path to the exact frozen model input; checksum is verified.
@@ -160,10 +160,10 @@ def audit_case(folder,w,m,limit,z):
 
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument('--original',type=Path,default=Path('/content/drive/MyDrive/SEGAN_CBC_FULL_MILP_RESULTS'))
-    ap.add_argument('--rerun',type=Path,default=Path('/content/drive/MyDrive/SEGAN_CBC_RERUN_900_RESULTS'))
+    ap.add_argument('--original',type=Path,default=Path('/content/drive/MyDrive/GRID_LOAD_MILP_FULL_MILP_RESULTS'))
+    ap.add_argument('--rerun',type=Path,default=Path('/content/drive/MyDrive/GRID_LOAD_MILP_RERUN_900_RESULTS'))
     ap.add_argument('--frozen',type=Path,required=True)
-    ap.add_argument('--output',type=Path,default=Path('/content/drive/MyDrive/SEGAN_CBC_VERIFICATION'))
+    ap.add_argument('--output',type=Path,default=Path('/content/drive/MyDrive/GRID_LOAD_MILP_VERIFICATION'))
     a=ap.parse_args()
     for p in [a.original,a.frozen]:
         if not p.exists():raise FileNotFoundError(f'Missing source: {p}')

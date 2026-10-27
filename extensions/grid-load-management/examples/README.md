@@ -1,6 +1,6 @@
-# Public, fully synthetic SEGAN MILP execution examples
+# Public, fully synthetic Grid Load Management MILP execution examples
 
-These example inputs are **100% artificial, created from explicit deterministic mathematical formulas** using the Python standard library. They do **not** use the Iraq SCADA record, frozen model windows, demand reconstructions, or fitted forecast residuals. **Never cite their numerical outputs as SEGAN manuscript results.**
+These example inputs are **100% artificial, created from explicit deterministic mathematical formulas** using the Python standard library. They do **not** use the Iraq SCADA record, frozen model windows, demand reconstructions, or fitted forecast residuals. **Never cite their numerical outputs as Grid Load Management manuscript results.**
 
 ## Contents
 
@@ -14,7 +14,7 @@ These example inputs are **100% artificial, created from explicit deterministic 
 
 ## Run locally or in Google Colab
 
-From `extensions/segan-local-ramping-2026`:
+From `extensions/grid-load-management`:
 
 ```bash
 python -m pip install -r requirements.txt

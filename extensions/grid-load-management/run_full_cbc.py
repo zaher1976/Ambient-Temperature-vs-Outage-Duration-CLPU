@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CBC full-MILP sweep of the UNMODIFIED SEGAN v4 formulation.
+"""CBC full-MILP sweep of the UNMODIFIED Grid Load Management v4 formulation.
 
 All binary variables, including the restoration schedule, are reoptimised.
 Every case runs against one of the 12 SHA256-pinned frozen windows.
@@ -91,7 +91,7 @@ def make_cbc_solver(pulp, **kwargs):
 def assert_pulp_legacy_api(pulp):
     if pulp.__version__ != '3.3.2':
         raise RuntimeError(
-            f'This frozen SEGAN runner requires PuLP 3.3.2; found {pulp.__version__}. '
+            f'This frozen Grid Load Management runner requires PuLP 3.3.2; found {pulp.__version__}. '
             'Run %pip install "pulp==3.3.2" and restart the Colab session.'
         )
     if not hasattr(pulp, 'PULP_CBC_CMD') or not hasattr(pulp, 'LpVariable'):
