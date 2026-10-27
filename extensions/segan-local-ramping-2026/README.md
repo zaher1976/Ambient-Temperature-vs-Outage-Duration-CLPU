@@ -61,6 +61,12 @@ The *paired v3–v4 300-s comparison* gives a mean of per-window percentage redu
 
 Do not reuse the earlier repository's concept DOI `10.5281/zenodo.23205868` as the DOI of this distinct study. Deposit this package as a **new software record** on Zenodo and add the allocated version-specific DOI to the manuscript and `CITATION.cff` after publication. For step-by-step instructions see `ZENODO_UPLOAD.md`.
 
+## Zenodo version record (v1.0.0)
+
+The depositor supplied the Zenodo version-record URL [zenodo.org/records/23683578](https://zenodo.org/records/23683578) with DOI [10.5281/zenodo.23683578](https://doi.org/10.5281/zenodo.23683578). This identifier is specific to the SEGAN code-only deposit; the earlier CLPU study has a different DOI. The version 1.0.0 Zenodo-ready ZIP consists of 17 files, as documented in `RELEASE_MANIFEST_SHA256.json`.
+
+**Archival provenance:** the deposited code snapshot corresponds to GitHub squash-merge commit `bf425c82bbb5974e814913b04b239297248ec7ac`, under `extensions/segan-local-ramping-2026/`. This README was updated later to add the record link; these post-archive GitHub documentation edits are *not* part of the original 17-file ZIP. Zenodo publication status and file integrity should be checked against the public record itself before representing that external record as independently verified.
+
 ## License
 
 MIT (code). Recorded derived results are made available for verification as attributed research tables; **no original operational SCADA dataset is licensed for public redistribution**.
