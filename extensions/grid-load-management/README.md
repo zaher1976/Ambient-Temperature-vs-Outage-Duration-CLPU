@@ -61,7 +61,7 @@ The *paired v3–v4 300-s comparison* gives a mean of per-window percentage redu
 
 ## Archiving and citation
 
-Do not reuse the earlier repository's concept DOI `10.5281/zenodo.23205868` as the DOI of this distinct study. For this updated software, select **New version** for its own software record on Zenodo, and only cite the new version-specific DOI after publication. For step-by-step instructions see `ZENODO_UPLOAD.md`.
+**New v1.1.0 version DOI and record link, supplied by the depositor:** [`10.5281/zenodo.23685364`](https://zenodo.org/records/23685364). The v1.0.0 predecessor has DOI `10.5281/zenodo.23683578`, and the separate original temperature-versus-duration CLPU study retains its older concept DOI `10.5281/zenodo.23205868`. Do not conflate these identifiers. Zenodo publication status, uploaded-archive hash and metadata have not yet been independently retrieved in this session. The version v1.1.0 ZIP generated for deposition contains **26 entries**, including a SHA-256 manifest covering 25 files; its SHA-256 is `4694111e520a938685b16d601892a85567afc087eb48dd19409220823ecc2795`. This GitHub README was updated after the archived ZIP was generated. For deposition guidance see `ZENODO_UPLOAD.md`.
 
 ## License
 
@@ -69,9 +69,9 @@ MIT (code). Recorded derived results are made available for verification as attr
 
 ## Public synthetic execution examples: release v1.1.0
 
-Release v1.1.0 adds deterministic public examples and CI without modifying the archived MILP v3/v4 source or the protected hourly input protocol. See [`examples/README.md`](examples/README.md) for commands. The GitHub Actions workflow verified the small CBC demo at https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU/actions/runs/40464651042 (all steps successful, 2026-10-27). The 24-hour demo dataset is dimension- and schema-checked, but not part of the automatic CBC execution.
+Release v1.1.0 adds deterministic public examples and CI without modifying the archived MILP v3/v4 source or the protected hourly input protocol. See [`examples/README.md`](examples/README.md) for commands. The GitHub Actions workflow verified the small CBC demo at https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU/actions/runs/40466587104 (all steps successful, 2026-10-27). The 24-hour demo dataset is dimension- and schema-checked, but not part of the automatic CBC execution.
 
-**Release distinction**: Version 1.0.0 corresponds to the previously deposited Zenodo record DOI `10.5281/zenodo.23683578`; v1.1.0 is a new version that must be published through Zenodo to obtain its **own version DOI**. The current Zip should not be described as deposited/published until that is done. The original 72-case SCADA-derived results are not re-created from the synthetic data.
+**Release distinction**: v1.0.0 is linked to depositor-supplied DOI `10.5281/zenodo.23683578`; v1.1.0 has a separate depositor-supplied record at `10.5281/zenodo.23685364`. Confirm the Zenodo page marks v1.1.0 **Published** and contains the intended ZIP before claiming external archival verification. The original 72-case SCADA-derived results are not re-created from the synthetic data.
 
 ## Journal-independent distribution
 
