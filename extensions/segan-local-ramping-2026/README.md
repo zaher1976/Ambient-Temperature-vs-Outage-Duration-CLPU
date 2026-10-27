@@ -70,3 +70,15 @@ The depositor supplied the Zenodo version-record URL [zenodo.org/records/2368357
 ## License
 
 MIT (code). Recorded derived results are made available for verification as attributed research tables; **no original operational SCADA dataset is licensed for public redistribution**.
+
+## Public synthetic execution examples (added after archived v1.0.0)
+
+For readers without authorized SCADA inputs, use the deterministic, explicitly synthetic examples under [`examples/`](examples/README.md). The small example has three artificial feeders, eight hourly steps, and two scenarios. A second example uses five artificial feeders, 24 hours, and three scenarios. Generate inputs from pure Python formulas, then validate and execute the archived v4 solver with:
+
+```bash
+python examples/test_synthetic_data.py
+python synthetic_smoke_test.py
+python examples/run_synthetic_example.py --case small --time-limit 60 --output-dir demo_results
+```
+
+The [GitHub Actions synthetic workflow](../../../.github/workflows/segan-synthetic-demo.yml) checks the small case on each change without protected data. **These synthetic files were added after the original 17-file v1.0.0 Zenodo archive.** To archive them on Zenodo, publish a separate **new software version (suggested v1.1.0)** with a complete new ZIP; do not overwrite or misdescribe the existing v1.0.0 record, and do not present synthetic demo outputs as research findings.
