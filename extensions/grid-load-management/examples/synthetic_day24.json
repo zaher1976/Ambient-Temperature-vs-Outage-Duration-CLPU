@@ -1,7 +1,7 @@
 {
   "metadata": {
     "synthetic": true,
-    "dataset_id": "SEGAN_SYNTHETIC_DAY24_V1",
+    "dataset_id": "GRIDLOAD_SYNTHETIC_DAY24_V1",
     "source": "DETERMINISTIC_FORMULAS_ONLY_NO_SCADA",
     "seed": 314183,
     "time_step_hours": 1,

@@ -1,4 +1,6 @@
-# SEGAN local-ramping CBC sensitivity extension (code-only deposit)
+# Fairness-Constrained CLPU-Aware Grid Load Management
+
+**CBC MILP Reproducibility Code and Synthetic Examples (v1.1.0; journal-independent).**
 
 **Study**: *Fairness-Constrained, CLPU-Aware, Predictive–Prescriptive Load Management in Smart Grids under Scarcity Conditions* (2026).  
 **Author**: Zaher Fadhil Raham.  
@@ -6,7 +8,7 @@
 
 ## Scope and relation to the earlier CLPU repository
 
-This is a **separate SEGAN-style local-ramping extension**, not the same experiment as *Ambient Temperature versus Outage Duration as Surge Drivers in a Chronically Constrained Grid*. It must not replace that study's documented S1–S5 configurations, DOI, results or model equations. A new Zenodo deposit should receive its own version-specific DOI.
+This is a **separate grid-load-management local-ramping extension**, not the same experiment as *Ambient Temperature versus Outage Duration as Surge Drivers in a Chronically Constrained Grid*. It must not replace that study's documented S1–S5 configurations, DOI, results or model equations. The previous release v1.0.0 has its own Zenodo version DOI; deposit this updated software as a new version with a different version DOI.
 
 The original 12-window sensitivity run solves 72 full MILP cases (11 five-scenario primary windows and one four-scenario supplement) for local penalty multipliers `[0, 0.1, 0.25, 0.5, 1, 2]` against base penalty 0.01. CBC first ran for at most 300 s per case; six time-limit feasible cases were re-solved for at most 900 s. The six resulting CBC logs all state `Result - Optimal solution found` and the decision arrays pass the archived feasibility checks. **Do not interpret a missing reported numerical gap as gap=0.**
 
@@ -59,26 +61,18 @@ The *paired v3–v4 300-s comparison* gives a mean of per-window percentage redu
 
 ## Archiving and citation
 
-Do not reuse the earlier repository's concept DOI `10.5281/zenodo.23205868` as the DOI of this distinct study. Deposit this package as a **new software record** on Zenodo and add the allocated version-specific DOI to the manuscript and `CITATION.cff` after publication. For step-by-step instructions see `ZENODO_UPLOAD.md`.
-
-## Zenodo version record (v1.0.0)
-
-The depositor supplied the Zenodo version-record URL [zenodo.org/records/23683578](https://zenodo.org/records/23683578) with DOI [10.5281/zenodo.23683578](https://doi.org/10.5281/zenodo.23683578). This identifier is specific to the SEGAN code-only deposit; the earlier CLPU study has a different DOI. The version 1.0.0 Zenodo-ready ZIP consists of 17 files, as documented in `RELEASE_MANIFEST_SHA256.json`.
-
-**Archival provenance:** the deposited code snapshot corresponds to GitHub squash-merge commit `bf425c82bbb5974e814913b04b239297248ec7ac`, under `extensions/segan-local-ramping-2026/`. This README was updated later to add the record link; these post-archive GitHub documentation edits are *not* part of the original 17-file ZIP. Zenodo publication status and file integrity should be checked against the public record itself before representing that external record as independently verified.
+Do not reuse the earlier repository's concept DOI `10.5281/zenodo.23205868` as the DOI of this distinct study. For this updated software, select **New version** for its own software record on Zenodo, and only cite the new version-specific DOI after publication. For step-by-step instructions see `ZENODO_UPLOAD.md`.
 
 ## License
 
 MIT (code). Recorded derived results are made available for verification as attributed research tables; **no original operational SCADA dataset is licensed for public redistribution**.
 
-## Public synthetic execution examples (added after archived v1.0.0)
+## Public synthetic execution examples: release v1.1.0
 
-For readers without authorized SCADA inputs, use the deterministic, explicitly synthetic examples under [`examples/`](examples/README.md). The small example has three artificial feeders, eight hourly steps, and two scenarios. A second example uses five artificial feeders, 24 hours, and three scenarios. Generate inputs from pure Python formulas, then validate and execute the archived v4 solver with:
+Release v1.1.0 adds deterministic public examples and CI without modifying the archived MILP v3/v4 source or the protected hourly input protocol. See [`examples/README.md`](examples/README.md) for commands. The GitHub Actions workflow verified the small CBC demo at https://github.com/zaher1976/Ambient-Temperature-vs-Outage-Duration-CLPU/actions/runs/40464651042 (all steps successful, 2026-10-27). The 24-hour demo dataset is dimension- and schema-checked, but not part of the automatic CBC execution.
 
-```bash
-python examples/test_synthetic_data.py
-python synthetic_smoke_test.py
-python examples/run_synthetic_example.py --case small --time-limit 60 --output-dir demo_results
-```
+**Release distinction**: Version 1.0.0 corresponds to the previously deposited Zenodo record DOI `10.5281/zenodo.23683578`; v1.1.0 is a new version that must be published through Zenodo to obtain its **own version DOI**. The current Zip should not be described as deposited/published until that is done. The original 72-case SCADA-derived results are not re-created from the synthetic data.
 
-The [GitHub Actions synthetic workflow](../../../.github/workflows/segan-synthetic-demo.yml) checks the small case on each change without protected data. **These synthetic files were added after the original 17-file v1.0.0 Zenodo archive.** To archive them on Zenodo, publish a separate **new software version (suggested v1.1.0)** with a complete new ZIP; do not overwrite or misdescribe the existing v1.0.0 record, and do not present synthetic demo outputs as research findings.
+## Journal-independent distribution
+
+This software has no exclusive association with any journal. It can accompany a journal article, doctoral thesis, conference paper, or independent software citation. The earlier archived Zenodo v1.0.0 version with DOI 10.5281/zenodo.23683578 remains a preserved scholarly record. This v1.1.0 release adds a general project name, executable synthetic examples and CI tests. Do not cite synthetic-example metrics as operational findings.

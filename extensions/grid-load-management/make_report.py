@@ -61,7 +61,7 @@ def main():
         writer=csv.DictWriter(f,fieldnames=list(summary[0]));writer.writeheader();writer.writerows(summary)
     n=len(cases);n_ok=sum(r['usable_feasible'] for r in cases)
     complete=[r for r in summary if r['complete_for_11_windows']]
-    doc=['# Frozen-SEGAN full-MILP lambda sensitivity audit',
+    doc=['# Frozen grid load-management full-MILP lambda sensitivity audit',
          '',f'- Stored case results: {n} of 72 expected.',f'- Feasibility-checked cases: {n_ok}.',
          f'- Complete primary-window multiplier groups: {len(complete)} of 6.',
          '- W00 is excluded from primary-window averages.',

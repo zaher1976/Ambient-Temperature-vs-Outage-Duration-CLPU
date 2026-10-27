@@ -1,24 +1,24 @@
-name: SEGAN synthetic demo (no SCADA)
+name: Grid Load Management synthetic demo (no SCADA)
 
 on:
   push:
     paths:
-      - 'extensions/segan-local-ramping-2026/**'
-      - '.github/workflows/segan-synthetic-demo.yml'
+      - 'extensions/grid-load-management/**'
+      - '.github/workflows/grid-load-management-demo.yml'
   pull_request:
     paths:
-      - 'extensions/segan-local-ramping-2026/**'
-      - '.github/workflows/segan-synthetic-demo.yml'
+      - 'extensions/grid-load-management/**'
+      - '.github/workflows/grid-load-management-demo.yml'
   workflow_dispatch:
 
 jobs:
   synthetic-smoke:
-    name: Check synthetic SEGAN model
+    name: Check synthetic Grid Load Management model
     runs-on: ubuntu-latest
     timeout-minutes: 12
     defaults:
       run:
-        working-directory: extensions/segan-local-ramping-2026
+        working-directory: extensions/grid-load-management
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,6 +36,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: segan-synthetic-demo-results
-          path: extensions/segan-local-ramping-2026/demo_results/
+          name: grid-load-management-demo-results
+          path: extensions/grid-load-management/demo_results/
           if-no-files-found: ignore
